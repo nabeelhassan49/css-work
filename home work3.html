@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* Restaurant Heading */
+        h3 {
+            text-align: right;
+            font-family: Georgia, serif;
+            font-size: 30px;
+            color: darkred;
+        }
+
+        /* Welcome Message */
+        .welcome {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            word-spacing: 8px;
+            color: darkgreen;
+        }
+
+        /* Menu Table */
+        table {
+            width: 60%;
+            margin: 25px auto;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f2c078;
+        }
+
+        
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        
+        .icon {
+            color: darkred;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>
+        <i class="fa-solid fa-utensils icon"></i>
+        Tasty Treat Restaurant
+    </h3>
+
+    <p class="welcome">
+        Welcome to our delicious world!
+        <i class="fa-solid fa-heart icon"></i>
+    </p>
+
+    <table>
+        <tr>
+            <th>Menu Item</th>
+            <th>Price (₹)</th>
+        </tr>
+        <tr>
+            <td>Chicken Biryani</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td>Masala Dosa</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td>Veg Fried Rice</td>
+            <td>120</td>
+        </tr>
+    </table>
+
+    <p style="text-align: center;">
+        <a href="#menu">Explore Our Menu</a>
+    </p>
+
+</body>
+</html>

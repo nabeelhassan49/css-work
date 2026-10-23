@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Contact Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Fixed Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #234e70;
+            color: white;
+            text-align: center;
+            padding: 18px 0;
+            z-index: 10;
+        }
+
+        /* Profile Section */
+        .profile {
+            position: relative;
+            margin: 100px auto 30px;
+            padding: 25px;
+            width: 80%;
+            min-height: 250px;
+            background-color: white;
+            overflow: auto;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        /* Profile Image */
+        .profile img {
+            float: left;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        /* Employee Details */
+        .details {
+            margin-left: 190px;
+            margin-right: 240px;
+            padding: 10px;
+        }
+
+        /* Contact Info Box */
+        .contact {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+            padding: 10px;
+            border-left: 3px solid #234e70;
+            background-color: #eaf3f8;
+            text-align: center;
+            overflow: auto;
+        }
+
+        h2 {
+            color: #234e70;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2 style="color: white; margin: 0;">
+            Company Contact Card
+        </h2>
+    </header>
+
+    <div class="profile">
+
+        <img
+            src="https://tse4.mm.bing.net/th/id/OIP.5iVyXqRtvCrgKhF5sYbAEAHaHs?r=0&pid=Api&h=220&P=0"
+            alt="Employee Profile Photo"
+        >
+
+        <div class="details">
+            <h2>Nabeel hassan</h2>
+            <h3>Software Developer</h3>
+            <p>
+                Nabeel works as a software developer in our company.
+                He develops and maintains applications and helps
+                the team deliver quality software solutions.
+            </p>
+        </div>
+
+        <div class="contact">
+            <h3>Contact Info</h3>
+            <p>Phone: +91 9876543210</p>
+            <p>Email: nabeel@example.com</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

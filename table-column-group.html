@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.group {
+    display: table-column-group;
+}
+.column {
+    display: table-column;
+    background: lightyellow;
+}
+.table {
+    display: table;
+    border-collapse: collapse;
+}
+.row {
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+<h3>display: table-column-group</h3>
+<div class="table">
+    <div class="group">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+    <div class="row">
+        <div class="cell">Name</div>
+        <div class="cell">Age</div>
+        <div class="cell">height</div>
+    </div>
+</div>
+</body>
+</html>

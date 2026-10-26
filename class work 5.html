@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+
+    <style>
+    
+        section {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        
+        }
+        section p::first-line {
+            font-weight: bold;
+        }
+
+        section p::first-letter {
+            color: red;
+            font-size: 2em;
+        }
+
+        .heading-container h3 {
+            color: black;
+        }
+
+        .heading-container h3 + h3 {
+            color: green;
+        }
+        div ul li:first-child a {
+            color: red;
+        }
+        a:link {
+            color: blue;
+        }
+ a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Welcome to My Webpage</h2>
+
+        <p>
+            This is the first paragraph demonstrating CSS pseudo-elements.
+            The first line is bold, and the first letter is red and larger.
+        </p>
+
+        <p>
+            This is the second paragraph showing the same styling.
+            Notice how the first line and first letter are styled differently.
+        </p>
+    </section>
+
+    <div class="heading-container">
+        <h3>First Heading</h3>
+        <h3>Second Heading</h3>
+    </div>
+
+    <div>
+        <h3>Useful Links</h3>
+        <ul>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+            <li><a href=https://www.youtube.com/>youtube</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

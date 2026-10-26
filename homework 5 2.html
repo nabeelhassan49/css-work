@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Post</title>
+
+    <style>
+        .blog-post {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 25px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+
+        .author {
+            color: #777;
+            font-style: italic;
+        }
+
+        .content p::first-line {
+            font-weight: bold;
+        }
+        .content p::first-letter {
+            font-size: 2.5em;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        blockquote {
+            background-color: #eee;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #444;
+        }
+
+        blockquote::before {
+            content: "“";
+            font-size: 2em;
+            color: #3498db;
+        }
+
+        a:link {
+            color: rgb(25, 25, 204);
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+    
+        .headings {
+            display: flex;
+            gap: 20px;
+        }
+
+        .headings h4 {
+            color: #333;
+        }
+
+        .headings h4 + h4 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="blog-post">
+        <h1>My First Blog Post</h1>
+
+        <p class="author">Written by Nabeel Hassan</p>
+
+        <div class="content">
+            <p>
+                Welcome to my blog! This is my first post where I share
+                my thoughts, experiences, and ideas with everyone.
+                I hope you enjoy reading this article.
+            </p>
+
+            <blockquote>
+                The journey of a thousand miles begins with a single step.
+            </blockquote>
+
+            <p>
+                Blogging is a great way to express yourself and share
+                knowledge with others around the world.
+            </p>
+        </div>
+
+        <div class="headings">
+            <h4>Related Articles</h4>
+            <h4>Popular Posts</h4>
+        </div>
+
+        <p>
+            Read more on
+            <a href="https://www.wikipedia.org">Wikipedia</a>
+            or visit
+            <a href="https://www.google.com">Google</a>.
+        </p>
+    </article>
+
+</body>
+</html>

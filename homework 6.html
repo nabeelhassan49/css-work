@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blog Section</title>
+
+    <style>
+        .blog-section {
+            padding: 30px;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .blog-section h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .blog-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .blog-post {
+            width: 30%;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        img[src$=".jpg"] {
+            width: 100%;
+            height: auto;
+            border-radius: 0 20px 0 20px;
+        }
+
+        a[href^="https"] {
+            color: red;
+        }
+
+        .blog-post a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 600px) {
+            .blog-container {
+                flex-direction: column;
+            }
+
+            .blog-post {
+                width: auto;
+            }
+
+            .blog-section {
+                padding: 15px;
+                font-size: 14px;
+            }
+
+            .blog-section h1 {
+                font-size: 24px;
+            }
+
+            .blog-post h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            .blog-section {
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="blog-section">
+        <h1>Featured Blogs</h1>
+
+        <div class="blog-container">
+
+            <article class="blog-post">
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.SBhIxwpmDceYVS7ouI-1AQHaE8?r=0&pid=Api&h=220&P=0"
+                    alt="Technology blog image"
+                >
+                <h2>The Future of Technology</h2>
+                <p>Discover how new technologies are changing our daily lives.</p>
+                <a href="https://video.search.yahoo.com/search/video;_ylt=A2RTWbuwVt9qQAMAc.r7w8QF;_ylu=Y29sbwNhcC1zb3V0aGVhc3QtMQRwb3MDMQR2dGlkAwRzZWMDc3I-?fr=mcafee&p=ow+new+technologies+are+changing+our+daily+lives+yout&imgurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DSuYHBnSuDV0">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <img
+                    src="https://up.yimg.com/ib/th/id/OVP.4kvzdjdzkkd9sc6Knc7CAQEsDh?pid=Api&h=225&w=300&c=7&rs=1&qlt=95"
+                    alt="Travel blog image"
+                >
+                <h2>Top Travel Destinations</h2>
+                <p>Explore beautiful destinations and plan your next adventure.</p>
+                <a href="https://video.search.yahoo.com/search/video;_ylt=A2RTWbvsVt9q7QIAD9P7w8QF;_ylu=Y29sbwNhcC1zb3V0aGVhc3QtMQRwb3MDNwR2dGlkAwRzZWMDc3I-?fr=mcafee&p=%3EExplore+beautiful+destinations+and+plan+your+next+adventure.+yout&imgurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DbZFgA2jnQDY">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <img
+                    src="https://up.yimg.com/ib/th/id/OVP.q6hWQKleaFecSkBurxKJxAEsDh?pid=Api&h=225&w=300&c=7&rs=1&qlt=95"
+                    alt="Food blog image"
+                >
+                <h2>Easy and Delicious Recipes</h2>
+                <p>Try simple recipes that bring more flavor to your kitchen.</p>
+                <a href="https://video.search.yahoo.com/search/video;_ylt=A2RTWbs3V99qQAMAJX37w8QF;_ylu=Y29sbwNhcC1zb3V0aGVhc3QtMQRwb3MDMTAEdnRpZAMEc2VjA3Ny?fr=mcafee&p=simple+recipes+that+bring+more+flavor+to+your+kitchen+yout&imgurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7k-NTkA76rU">Read More</a>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>

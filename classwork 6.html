@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        
+        .product-card {
+            width: 300px;
+            padding: 20px;
+            margin: 30px auto;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+
+         .product-image {
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 20px 0 20px 0;
+        }
+.product-card h2 {
+            font-size: 24px;
+        }
+      .product-card button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+
+        
+        @media screen and (max-width: 600px) {
+            .product-card {
+                width: 80%;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .product-card h2 {
+                font-size: 18px;
+            }
+
+            .product-card button {
+                font-size:14px;
+            }
+        }
+
+        
+        @media screen and (orientation: landscape) {
+            .product-card {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        <img
+            src="https://i5.walmartimages.com/seo/VEATOOL-Bluetooth-Headphones-True-Wireless-Earbuds-60H-Playback-LED-Power-Display-Earphones-Charging-Case-IPX7-Waterproof-in-Ear-Mic-TV-Smart-Phone-C_fb7090ad-9091-476b-9d49-69ad62628b43.ddaa3a9cf14497f6badec5b3fdd69a12.jpeg"
+            alt="Sample product"
+            class="product-image"
+        >
+
+        <h2>Wireless Headphones</h2>
+
+        <p>High-quality wireless headphones with clear sound.</p>
+
+        <button type="button">Buy Now</button>
+    </div>
+
+</body>
+</html>
+
